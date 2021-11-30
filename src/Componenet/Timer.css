@@ -1,0 +1,32 @@
+.timer {
+  width: 300px;
+  height: 100px;
+  background-color: rgba(47, 47, 48, 0.7);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.timer span {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.timer button {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+  height: 25px;
+  color: rgb(31, 29, 29);
+  font-weight: 700;
+}
+
+.over {
+  color: rgb(255, 255, 255);
+  margin-top: 5px;
+}
