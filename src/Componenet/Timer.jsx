@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Timer.css";
 
-const Timer = ({ minutes = 5, seconds = 0 }) => {
+const Timer = ({ minutes, seconds, step }) => {
   const [paused, setPaused] = useState(false);
   const [over, setOver] = useState(false);
   const [time, setTime] = useState({
@@ -28,7 +28,7 @@ const Timer = ({ minutes = 5, seconds = 0 }) => {
   };
 
   useEffect(() => {
-    let timerID = setInterval(() => tick(), 1000);
+    let timerID = setInterval(() => tick(), step);
     return () => clearInterval(timerID);
   });
 
